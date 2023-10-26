@@ -64,7 +64,7 @@ import LeftSideBar from "../../components/LeftSideBar/LeftSideBar"
         <img src={search} alt="search" className='search-icon' width="18"/>
       </form>
         {User === null ?
-            <Link to="/Auth" className='nav-item nav-links'>Log in</Link>:
+            <Link to="/" className='nav-item nav-links'>Log in</Link>:
         <>
         <Avatar backgroundColor='#009dff' py='8px' px='15px' borderRadius='50%' color='white'  > <Link
                   to={`/Users/${User?.result?._id}`}
